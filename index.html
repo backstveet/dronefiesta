@@ -3,11 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Drone Fiesta 2026 – Zlot dronów | Rafał </title>
+  <title>Drone Fiesta 2026 – Zlot dronów | Rafał</title>
   <meta name="description" content="Drone Fiesta – największy zlot dronów w Polsce. Organizator: Rafał. Pokazy, technologia dronowa i wydarzenia UAV." />
   <meta name="keywords" content="Drone Fiesta, zlot dronów, Rafał, festiwal dronowy, pokazy dronów, wydarzenie z dronami, Podlesice" />
   <meta name="robots" content="index, follow" />
   <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml" />
+
+  <!-- (opcjonalnie) canonical – jeśli chcesz, żeby sygnał docelowo szedł do nowej domeny -->
+  <link rel="canonical" href="https://www.zlotbsp.pl/" />
+
+  <!-- Soft redirect po 1 sekundzie -->
+  <script>
+    setTimeout(function () {
+      window.location.replace("https://www.zlotbsp.pl/");
+    }, 1000);
+  </script>
+
+  <!-- Fallback dla osób bez JS -->
+  <noscript>
+    <meta http-equiv="refresh" content="1;url=https://www.zlotbsp.pl/" />
+  </noscript>
+
   <style>
     body {
       margin: 0;
@@ -25,6 +41,7 @@
       top: 0;
       right: 0;
       padding: 1rem;
+      z-index: 10;
     }
     nav a {
       color: white;
@@ -54,19 +71,44 @@
       position: absolute;
       left: -9999px;
     }
+
+    /* (opcjonalnie) mały komunikat, żeby użytkownik wiedział co się dzieje */
+    .redirect-note{
+      position: fixed;
+      bottom: 16px;
+      left: 16px;
+      right: 16px;
+      max-width: 960px;
+      margin: 0 auto;
+      background: rgba(255,255,255,0.08);
+      padding: 10px 12px;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+    .redirect-note a{ color:#fff; }
   </style>
 </head>
+
 <body>
   <nav><a href="jak-dojechac.html">Jak dojechać</a></nav>
-  <h1></h1>
+
+  <!-- jeśli chcesz, możesz zostawić pusty h1, ale lepiej mieć treść -->
+  <h1>Drone Fiesta</h1>
+
   <div class="video-container">
     <iframe src="https://www.youtube.com/embed/0oBx7Jg4m-o?si=afAb4voSBbEhcf5X"
       title="Drone Fiesta 2025"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
   </div>
+
+  <div class="redirect-note">
+    Przenosimy na nową stronę: <a href="https://www.zlotbsp.pl/">https://www.zlotbsp.pl/</a>
+  </div>
+
   <div class="seo-hidden">
     Drone Fiesta, zlot dronów, Rafał, Jak dojechać na Drone Fiesta, dojazd Drone Fiesta, Podlesice, lokalizacja Drone Fiesta 2026.
   </div>
 </body>
 </html>
+
